@@ -1,0 +1,15 @@
+<div class="w-11/12 m-auto">
+    <div class="max-w-80 border m-auto my-16 border-solid border-gray-400 rounded-lg p-4">
+        <h4 class="text-center">Singin</h4>
+        <form (ngSubmit)="signUp()" class="flex flex-col justify-between gap-7 items-start py-6">
+            <input id="name" type="text" [(ngModel)]="name" name="name" placeholder="Name" class="max-w-64 w-full m-auto border border-slate-400 rounded-lg p-2 outline-none" required>
+            <input id="nickname" type="text" [(ngModel)]="nickname" name="nickname" placeholder="Nickname" class="max-w-64 w-full m-auto border border-slate-400 rounded-lg p-2 outline-none" required>
+            <input id="password" type="text" [(ngModel)]="password" name="password"  placeholder="Password" class="max-w-64 w-full m-auto border border-slate-400 rounded-lg p-2 outline-none" required>
+            <input id="confirmPassword" type="text" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Submit Password" class="max-w-64 w-full m-auto border border-slate-400 rounded-lg p-2 outline-none" required>
+            <button type="submit" class="m-auto max-w-64 w-full my-bg p-2 rounded-lg text-white">Signup</button>
+        </form>
+        <div class="border-t border-t-gray-400 py-3">
+            <h4 class="text-center cursor-default">Already have an account? <a routerLink="/login" class="my-color cursor-pointer">Signin</a></h4>
+        </div>
+    </div>
+</div>

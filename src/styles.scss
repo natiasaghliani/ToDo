@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'tailwindcss/base';
+@use 'tailwindcss/components';
+@use 'tailwindcss/utilities';
+ 
+* {
+    box-sizing: border-box;
+}
+
+
+.my-color {
+    color: #FF4F5A;
+}
+
+.my-bg {
+    background-color: #FF4F5A;
+}
+
+.my-bg1{
+    background: #FF4F5A ;
+}

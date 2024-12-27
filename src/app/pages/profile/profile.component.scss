@@ -1,0 +1,22 @@
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style the label to look like a custom checkbox */
+  .custom-checkbox label {
+    display: inline-block;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border: 2px solid #ccc;
+    border-radius: 4px; /* Optional, for rounded corners */
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Change the background color when the checkbox is marked */
+  .custom-checkbox input[type="checkbox"]:checked + label {
+    background-color: #FF4F5A;
+    border-color: #FF4F5A;
+  }
